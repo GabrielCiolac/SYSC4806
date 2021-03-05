@@ -1,1 +1,1 @@
-# SYSC4806
+# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=main)](https://travis-ci.com/GabrielCiolac/SYSC4806)
