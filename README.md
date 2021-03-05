@@ -26,7 +26,7 @@ generated, for choice questions a pie chart is generated
 14. Wait for approval
 
 ## Contributors
-
+Gabriel Ciolac - 101071319
 
 ## Todo
 
