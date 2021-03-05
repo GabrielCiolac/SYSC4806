@@ -1,7 +1,15 @@
 # SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=development)](https://travis-ci.com/GabrielCiolac/SYSC4806)
+Mini-Survey Monkey
 
+##Description
+Surveyor can create a survey with a list of Questions. Questions can be open-ended (text), asking for a number within a
+range, or asking to choose among many options.  Users fill out a survey that is a form generated based on the type of 
+questions in the survey. Surveyor can close the survey whenever they want
+(thus not letting in new users to fill out the survey), and at that point a survey result is generated, compiling the
+answers: for open-ended questions, the answers are just listed as-is, for number questions a histogram of the answers is
+generated, for choice questions a pie chart is generated
 
-## Contributions:
+## Contributions
 1. Open an issue with your requested change
 2. Be descriptive in the issue, list the goals of the change
 3. Open a branch with the same name as the issue
@@ -16,3 +24,10 @@
 12. Check to see if development is still passing
 13. If development is passing open a Pull Request into main, and assign everyone to the PR
 14. Wait for approval
+
+## Contributors
+
+
+## Todo
+
+- [x] Sample Checkbox
