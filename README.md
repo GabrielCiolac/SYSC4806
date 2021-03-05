@@ -1,4 +1,4 @@
-# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=add-sam-to-readme)](https://travis-ci.com/GabrielCiolac/SYSC4806)
+# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=development)](https://travis-ci.com/GabrielCiolac/SYSC4806)
 Mini-Survey Monkey
 
 ## Description
