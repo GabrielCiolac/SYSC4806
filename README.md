@@ -27,7 +27,8 @@ generated, for choice questions a pie chart is generated
 
 ## Contributors
 Gabriel Ciolac - 101071319  
-Britney Baker - 101039860
+Britney Baker - 101039860  
+Mathew Smith - 101029870
 ## Todo
 
 - [x] Sample Checkbox
