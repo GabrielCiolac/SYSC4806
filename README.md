@@ -1,4 +1,4 @@
-# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=add-britney-to-readme)](https://travis-ci.com/GabrielCiolac/SYSC4806)
+# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=development)](https://travis-ci.com/GabrielCiolac/SYSC4806)
 Mini-Survey Monkey
 
 ## Description
@@ -26,7 +26,7 @@ generated, for choice questions a pie chart is generated
 14. Wait for approval
 
 ## Contributors
-Gabriel Ciolac - 101071319
+Gabriel Ciolac - 101071319  
 Britney Baker - 101039860
 ## Todo
 
