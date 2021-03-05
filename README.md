@@ -1,4 +1,4 @@
-# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=development)](https://travis-ci.com/GabrielCiolac/SYSC4806)
+# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=add-sam-to-readme)](https://travis-ci.com/GabrielCiolac/SYSC4806)
 Mini-Survey Monkey
 
 ## Description
@@ -28,7 +28,21 @@ generated, for choice questions a pie chart is generated
 ## Contributors
 Gabriel Ciolac - 101071319  
 Britney Baker - 101039860  
-Mathew Smith - 101029870
+Mathew Smith - 101029870  
+Samantha Tripp - 101089563
+
 ## Todo
 
-- [x] Sample Checkbox
+- [ ] **Write tests**
+- [ ] Create a form repository
+- [ ] Create a form repository service
+- [ ] Create a form controller  
+- [ ] Create a form object
+- [ ] Decide question architecture (i.e. abstract question class)
+- [ ] Implement question architecture  
+- [ ] Create HTML page serving a list of forms
+- [ ] Create HTML page serving an individual form  
+- [ ] Set up base REST API service for form creation
+- [ ] Set REST API service for form accesses
+- [ ] Persistence of form responses
+- [ ] Create HTML page serving form responses, given form ID
