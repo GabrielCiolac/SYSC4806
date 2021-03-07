@@ -11,7 +11,9 @@ public class Form {
     @GeneratedValue
     protected long id;
 
+
     String title;
+
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     private List<Question> questionList;
