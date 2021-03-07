@@ -26,8 +26,8 @@ public class FormController {
     @GetMapping(path="/index")
     public String index(Model model) {
         Iterable<Form> forms = service.findAll();
-        Iterator formIterator = forms.iterator();
-        if (formIterator.hasNext()) {
+        //Iterator formIterator = forms.iterator();
+        if (forms != null) {
             StringBuilder links = new StringBuilder();
             for (Form form : forms) {
 
