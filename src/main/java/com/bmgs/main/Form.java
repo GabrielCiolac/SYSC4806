@@ -11,6 +11,8 @@ public class Form {
     @GeneratedValue
     protected long id;
 
+    String title;
+
     //TODO Replace String to Question Type
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     private List<Question> questionList;
@@ -23,6 +25,30 @@ public class Form {
 
     public Form(List<Question> questionList){
         this.questionList = questionList;
+    }
+
+    /**
+     * Get the form ID.
+     * @return id
+     */
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * Set form title.
+     * @param title
+     */
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    /**
+     * Get form title.
+     * @return title
+     */
+    public String getTitle() {
+        return title;
     }
 
     /**
