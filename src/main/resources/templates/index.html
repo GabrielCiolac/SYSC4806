@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Master List</title>
+</head>
+<body>
+    <h1>Form Master List</h1>
+    <button id="create" class="float-left submit-button">Create Form</button>
+
+    <!-- Begin List of Form Links -->
+    <p th:text="${forms}" />
+</body>
+</html>
