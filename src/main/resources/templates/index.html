@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Master List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="Form.js"></script>
 </head>
 <body>
     <h1>Form Master List</h1>
-    <button id="create" class="float-left submit-button">Create Form</button>
+    <form id="addForm">
+        <p>Title: <input type="text" id="title"/></p>
+        <input type="submit" value="Send" />
+    </form>
 
     <!-- Begin List of Form Links -->
     <p th:text="${forms}" />
