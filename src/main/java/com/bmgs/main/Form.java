@@ -11,12 +11,8 @@ public class Form {
     @GeneratedValue
     protected long id;
 
-<<<<<<< Updated upstream
     String title;
 
-    //TODO Replace String to Question Type
-=======
->>>>>>> Stashed changes
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     private List<Question> questionList;
 
