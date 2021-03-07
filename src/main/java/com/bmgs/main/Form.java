@@ -1,5 +1,6 @@
-import javax.persistence.Entity;
-import javax.persistence.Id;
+package com.bmgs.main;
+
+import javax.persistence.*;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -7,18 +8,20 @@ import java.util.List;
 public class Form {
 
     @Id
-    private Long id;
+    @GeneratedValue
+    protected long id;
 
     //TODO Replace String to Question Type
-    private List<String> questionList;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
+    private List<Question> questionList;
 
     public Form(){
 
-        questionList = new LinkedList<String>();
+        questionList = new LinkedList<Question>();
 
     }
 
-    public Form(List<String> questionList){
+    public Form(List<Question> questionList){
         this.questionList = questionList;
     }
 
@@ -26,7 +29,7 @@ public class Form {
      * Adds question to the question list.
      * @param question
      */
-    public void addQuestion(String question){
+    public void addQuestion(Question question){
         questionList.add(question);
     }
 
@@ -43,7 +46,7 @@ public class Form {
     /**
      * Get question from question list.
      */
-    public String getQuestion(int i){
+    public Question getQuestion(int i){
         if(i >= 0 && i < questionList.size()){
             return questionList.get(i);
         }
@@ -61,7 +64,7 @@ public class Form {
      * Get question list.
      * @return
      */
-    public List<String> getQuestionList(){
+    public List<Question> getQuestionList(){
         return this.questionList;
     }
 
@@ -69,23 +72,8 @@ public class Form {
      * Set question list.
      * @param questionList
      */
-    public void setQuestionList(List<String> questionList){
+    public void setQuestionList(List<Question> questionList){
         this.questionList = questionList;
     }
 
-    /**
-     * Get id.
-     * @return
-     */
-    public Long getId(){
-        return this.id;
-    }
-
-    /**
-     * Set id.
-     * @param id
-     */
-    public void setId(Long id){
-        this.id = id;
-    }
 }
