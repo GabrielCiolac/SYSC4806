@@ -22,13 +22,12 @@ public class FormRepositoryService implements FormRepository{
 
     @Override
     public Iterable<Form> findAll(Sort sort) {
-        return null;
+        return repo.findAll(sort);
     }
 
     @Override
     public Page<Form> findAll(Pageable pageable) {
-        return null;
-    }
+        return repo.findAll(pageable);    }
 
     @Override
     public <S extends Form> S save(S s) {
@@ -52,7 +51,7 @@ public class FormRepositoryService implements FormRepository{
 
     @Override
     public Iterable<Form> findAll() {
-        return null;
+        return repo.findAll();
     }
 
     @Override
@@ -67,12 +66,12 @@ public class FormRepositoryService implements FormRepository{
 
     @Override
     public void deleteById(Long aLong) {
-
+        repo.deleteById(aLong);
     }
 
     @Override
     public void delete(Form form) {
-
+        repo.delete(form);
     }
 
     @Override
