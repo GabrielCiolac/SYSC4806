@@ -102,4 +102,20 @@ public class Form {
         this.questionList = questionList;
     }
 
+    /**
+     * String representation of the Form object.
+     * @return String
+     */
+    @Override
+    public String toString() {
+        StringBuilder str = new StringBuilder();
+        str.append(title);
+        str.append('\n');
+        for (Question q: questionList) {
+            str.append(q.toString());
+            str.append('\n');
+        }
+        return str.toString();
+    }
+
 }
