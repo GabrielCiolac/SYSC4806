@@ -22,6 +22,11 @@ public class Form {
 
     }
 
+    public Form(String title){
+        this.title = title;
+        questionList = new LinkedList<Question>();
+    }
+
     public Form(List<Question> questionList){
         this.questionList = questionList;
     }
