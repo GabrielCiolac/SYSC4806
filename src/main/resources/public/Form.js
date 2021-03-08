@@ -14,4 +14,35 @@ $(document).ready(function() {
             data: formData
         })
     })
+
+    function getQuestions(){
+        $.ajax({
+            type: "get",
+            url: "form/{id}",
+            success:function(form){
+                console.log(form);
+               for(var question in form){
+
+               }
+            }
+        })
+    }
+
+
+    // for open ended, might need separate methods for each type
+    function postQuestion(){
+        var questionObj= {
+            question: $("#question").val()
+        }
+        $.ajax({
+            type: "POST",
+            url: "form/{id}",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(questionObj),
+            success:function(data){
+                // question was added
+            }
+        })
+    }
 });

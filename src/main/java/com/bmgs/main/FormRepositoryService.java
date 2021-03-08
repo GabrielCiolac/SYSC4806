@@ -16,8 +16,8 @@ public class FormRepositoryService implements FormRepository{
     private FormRepository repo;
 
     @Override
-    public Object findById(long id) {
-        return repo.findById(id);
+    public Form findById(long id) {
+        return (Form) repo.findById(id);
     }
 
     @Override
