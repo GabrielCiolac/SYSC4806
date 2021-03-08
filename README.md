@@ -1,4 +1,4 @@
-# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=issue-17-question-architecture)](https://travis-ci.com/GabrielCiolac/SYSC4806)
+# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=create_form_object)](https://travis-ci.com/GabrielCiolac/SYSC4806)
 Mini-Survey Monkey
 
 ## Description
@@ -9,7 +9,7 @@ questions in the survey. Surveyor can close the survey whenever they want
 answers: for open-ended questions, the answers are just listed as-is, for number questions a histogram of the answers is
 generated, for choice questions a pie chart is generated
 
-## Contributions
+## Contribution
 1. Open an issue with your requested change
 2. Be descriptive in the issue, list the goals of the change
 3. Open a branch with the same name as the issue
