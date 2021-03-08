@@ -1,14 +1,22 @@
 package com.bmgs.main;
 
-import junit.framework.TestCase;
 
-public class MultipleChoiceQuestionTests extends TestCase {
+import org.junit.jupiter.api.Test;
 
-    public void testGetQuestion(){
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+
+public class MultipleChoiceQuestionTests{
+
+
+    @Test
+    public void testGetQuestion() throws Exception{
         MultipleChoiceQuestion question = new MultipleChoiceQuestion("Which of the following is true?");
+
         assertEquals("Which of the following is true?", question.getQuestion());
     }
 
+    @Test
     public void testSetQuestion(){
         MultipleChoiceQuestion question = new MultipleChoiceQuestion();
         question.setQuestion("What colour is the sky?");
@@ -16,6 +24,7 @@ public class MultipleChoiceQuestionTests extends TestCase {
 
     }
 
+    @Test
     public void testAddOption(){
         MultipleChoiceQuestion question = new MultipleChoiceQuestion("How many days are in January?");
         question.addOption("31");
@@ -24,6 +33,7 @@ public class MultipleChoiceQuestionTests extends TestCase {
         assertEquals(3,question.getOptionList().size());
     }
 
+    @Test
     public void testGetOption(){
         MultipleChoiceQuestion question = new MultipleChoiceQuestion("How many days are in January?");
         question.addOption("31");
@@ -32,6 +42,7 @@ public class MultipleChoiceQuestionTests extends TestCase {
         assertEquals("28",question.getOption(1));
     }
 
+    @Test
     public void testDeleteOption(){
         MultipleChoiceQuestion question = new MultipleChoiceQuestion("How many days are in January?");
         question.addOption("31");
@@ -41,6 +52,7 @@ public class MultipleChoiceQuestionTests extends TestCase {
         assertEquals(2,question.getOptionList().size());
     }
 
+    @Test
     public void testClearOption(){
         MultipleChoiceQuestion question = new MultipleChoiceQuestion("How many days are in January?");
         question.addOption("31");
@@ -51,6 +63,7 @@ public class MultipleChoiceQuestionTests extends TestCase {
 
     }
 
+    @Test
     public void testToString(){
         MultipleChoiceQuestion question = new MultipleChoiceQuestion("How many days are in January?");
         question.addOption("31");
