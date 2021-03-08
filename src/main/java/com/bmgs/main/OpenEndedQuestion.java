@@ -9,7 +9,7 @@ public class OpenEndedQuestion extends Question<String>{
 
     @Id
     @GeneratedValue
-    private Long id;
+    protected Long id;
 
     private String question;
 
@@ -32,14 +32,6 @@ public class OpenEndedQuestion extends Question<String>{
         return this.id;
     }
 
-    /**
-     * This function sets the open-ended question id.
-     * @param id
-     */
-    @Override
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     /**
      * This function gets the open-ended question.

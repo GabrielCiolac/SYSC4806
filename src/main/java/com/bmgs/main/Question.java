@@ -16,7 +16,6 @@ public abstract class Question<T>{
         this.id = id;
     }
     public abstract Long getId();
-    public abstract void setId(Long id);
     public abstract T getQuestion();
     public abstract void setQuestion(T question);
 
