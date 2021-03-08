@@ -13,17 +13,11 @@ public class Option {
     private Boolean isSelected;
 
     public Option() {
-
+        this.text = "";
     }
 
     public Option(String text){
         this.text = text;
-    }
-
-
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     @Id
@@ -41,5 +35,15 @@ public class Option {
 
     public String getText() {
         return text;
+    }
+
+    public void setText(String text) {this.text = text;}
+
+    @Override
+    public String toString() {
+        return "Option{" +
+                "text='" + text + '\'' +
+                ", isSelected=" + isSelected +
+                '}';
     }
 }

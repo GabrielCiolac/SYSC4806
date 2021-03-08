@@ -22,6 +22,6 @@ public class OpenEndedQuestionTests{
     public void testToString(){
         OpenEndedQuestion question = new OpenEndedQuestion();
         question.setQuestion("What is your least favorite color?");
-        assertEquals("OpenEndedQuestion{id=1, question='What is your least favorite color?'}",question.toString());
+        assertEquals("OpenEndedQuestion{question='What is your least favorite color?'}",question.toString());
     }
 }

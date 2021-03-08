@@ -54,8 +54,7 @@ public class OpenEndedQuestion extends Question<String>{
     @Override
     public String toString() {
         return "OpenEndedQuestion{" +
-                "id=" + id +
-                ", question='" + question + '\'' +
+                "question='" + question + '\'' +
                 '}';
     }
 }

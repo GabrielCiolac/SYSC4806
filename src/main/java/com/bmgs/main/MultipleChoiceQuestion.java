@@ -84,7 +84,7 @@ public class MultipleChoiceQuestion extends Question<String>{
 
         String s = "";
         for(int i = 0; i < optionList.size();i++){
-            s += optionList.get(i) + " ";
+            s += optionList.get(i).getText() + " ";
         }
 
         return "MultipleChoiceQuestion{" +

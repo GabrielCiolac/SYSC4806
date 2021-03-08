@@ -96,8 +96,7 @@ public class RatingScaleQuestion extends Question<String>{
     @Override
     public String toString() {
         return "RatingScaleQuestion{" +
-                "id=" + id +
-                ", question='" + question + '\'' +
+                "question='" + question + '\'' +
                 ", min=" + min +
                 ", max=" + max +
                 '}';
