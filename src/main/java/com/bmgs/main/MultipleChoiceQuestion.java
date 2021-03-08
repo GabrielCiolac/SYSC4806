@@ -15,21 +15,21 @@ public class MultipleChoiceQuestion extends Question<String>{
 
     private String question;
 
-    private List<String> optionList;
+    private List<Option> optionList;
 
     public MultipleChoiceQuestion(){
         super();
         question = "";
-        optionList = new LinkedList<String>();
+        optionList = new LinkedList<Option>();
     }
 
     public MultipleChoiceQuestion(String question){
         super();
         this.question = question;
-        optionList = new LinkedList<String>();
+        optionList = new LinkedList<Option>();
     }
 
-    public MultipleChoiceQuestion(String question, LinkedList<String> optionList){
+    public MultipleChoiceQuestion(String question, LinkedList<Option> optionList){
         super();
         this.question = question;
         this.optionList = optionList;
@@ -38,11 +38,6 @@ public class MultipleChoiceQuestion extends Question<String>{
     @Override
     public Long getId() {
         return this.id;
-    }
-
-    @Override
-    public void setId(Long id) {
-        this.id = id;
     }
 
     @Override
@@ -55,19 +50,19 @@ public class MultipleChoiceQuestion extends Question<String>{
         this.question = question;
     }
 
-    public List<String> getOptionList(){
+    public List<Option> getOptionList(){
         return this.optionList;
     }
 
-    public void setOptionList(List<String> optionList){
+    public void setOptionList(List<Option> optionList){
         this.optionList = optionList;
     }
 
-    public void addOption(String option){
+    public void addOption(Option option){
         this.optionList.add(option);
     }
 
-    public String getOption(int i){
+    public Option getOption(int i){
         if(i >= 0 && i < optionList.size()){
             return optionList.get(i);
         }

@@ -43,14 +43,6 @@ public class RatingScaleQuestion extends Question<String>{
         return this.id;
     }
 
-    /**
-     * This function sets the rating scale question id.
-     * @param id
-     */
-    @Override
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     /**
      * This function gets the rating scale question.

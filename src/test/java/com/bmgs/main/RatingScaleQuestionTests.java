@@ -45,7 +45,6 @@ public class RatingScaleQuestionTests{
     @Test
     public void testToString(){
         RatingScaleQuestion question = new RatingScaleQuestion("How likely are you going to drop out of school.",0,7);
-        question.setId(1L);
         assertEquals("RatingScaleQuestion{id=1, question='How likely are you going to drop out of school.', min=0, max=7}",question.toString());
     }
 }
