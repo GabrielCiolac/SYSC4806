@@ -11,9 +11,10 @@ public class Form {
     @GeneratedValue
     protected long id;
 
+
     String title;
 
-    //TODO Replace String to Question Type
+
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     private List<Question> questionList;
 
@@ -87,7 +88,7 @@ public class Form {
     }
 
     /**
-     * Get question list.
+     * Get question list
      * @return
      */
     public List<Question> getQuestionList(){
