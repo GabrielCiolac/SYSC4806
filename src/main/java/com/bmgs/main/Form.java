@@ -14,6 +14,7 @@ public class Form {
 
     String title;
 
+
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
     private List<Question> questionList;
 
