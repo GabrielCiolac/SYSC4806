@@ -59,14 +59,38 @@ public class FormController {
     }
 
     /**
-     * REST method for added questions to a form
+     * REST method for adding open ended questions to a form
      * @param formID
      */
-    @RequestMapping(value="/form/{id}", method=RequestMethod.POST)
-    public ResponseEntity<Object> postQuestion(@RequestBody Question question, @PathVariable("id") long formID) {
+    @RequestMapping(value="/form/openended/{id}", method=RequestMethod.POST)
+    public ResponseEntity<Object> postOpenendedQuestion(@RequestBody OpenEndedQuestion question, @PathVariable("id") long formID) {
         Form form = service.findById(formID);
         form.addQuestion(question);
         service.save(form);
-        return new ResponseEntity<>(form, HttpStatus.OK);
+        return new ResponseEntity<>(form, HttpStatus.CREATED);
+    }
+
+    /**
+     * REST method for adding rating questions to a form
+     * @param formID
+     */
+    @RequestMapping(value="/form/ranking/{id}", method=RequestMethod.POST)
+    public ResponseEntity<Object> postRatingQuestion(@RequestBody RatingScaleQuestion question, @PathVariable("id") long formID) {
+        Form form = service.findById(formID);
+        form.addQuestion(question);
+        service.save(form);
+        return new ResponseEntity<>(form, HttpStatus.CREATED);
+    }
+
+    /**
+     * REST method for adding multiple choice questions to a form
+     * @param formID
+     */
+    @RequestMapping(value="/form/multiplechoice/{id}", method=RequestMethod.POST)
+    public ResponseEntity<Object> postMultipleChoiceQuestion(@RequestBody MultipleChoiceQuestion question, @PathVariable("id") long formID) {
+        Form form = service.findById(formID);
+        form.addQuestion(question);
+        service.save(form);
+        return new ResponseEntity<>(form, HttpStatus.CREATED);
     }
 }
