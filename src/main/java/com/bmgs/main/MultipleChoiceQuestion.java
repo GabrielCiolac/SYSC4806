@@ -1,8 +1,6 @@
 package com.bmgs.main;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,6 +13,7 @@ public class MultipleChoiceQuestion extends Question<String>{
 
     private String question;
 
+    @OneToMany(targetEntity=Option.class, fetch= FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Option> optionList;
 
     public MultipleChoiceQuestion(){

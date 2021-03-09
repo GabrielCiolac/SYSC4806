@@ -19,9 +19,9 @@ class MainApplicationTests {
 	@Autowired
 	private MockMvc mock;
 
-//	@Test
-//	void shouldReturnDefault() throws Exception {
-//		this.mock.perform(get("/index")).andDo(print()).andExpect(status().isOk()).andExpect(content().string(containsString("forms")));
-//	}
+	@Test
+	void shouldReturnDefault() throws Exception {
+		this.mock.perform(get("/index")).andDo(print()).andExpect(status().isOk()).andExpect(content().string(containsString("Form")));
+	}
 
 }
