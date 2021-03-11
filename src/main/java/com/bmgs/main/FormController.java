@@ -29,20 +29,21 @@ public class FormController {
         Iterable<Form> forms = service.findAll();
         //Iterator formIterator = forms.iterator();
         if (forms != null) {
-            StringBuilder links = new StringBuilder();
-            for (Form form : forms) {
-
-                // Get form ID and title
-                Long id = form.getId();
-                String title = form.getTitle();
-
-                // Add form link to string
-                links.append("<div><a href=\"forms/" + id + "\">" + title + "</a></div>");
-            }
-            model.addAttribute("forms", links.toString());
+//            StringBuilder links = new StringBuilder();
+//            for (Form form : forms) {
+//
+//                // Get form ID and title
+//                Long id = form.getId();
+//                String title = form.getTitle();
+//
+//                // Add form link to string
+//                links.append("<div><a href=\"forms/" + id + "\">" + title + "</a></div>");
+//            }
+            model.addAttribute("forms", forms);
         } else {
             model.addAttribute("forms", "No forms have been created yet.");
         }
+
         return "index";
     }
 

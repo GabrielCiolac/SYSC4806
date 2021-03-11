@@ -14,6 +14,8 @@
     </form>
 
     <!-- Begin List of Form Links -->
-    <p th:text="${forms}" />
+    <div th:each="form : ${forms}">
+        <a th:href="@{/form/{id}(id=${form.id})}" th:text="${form.title}"/>
+    </div>
 </body>
 </html>
