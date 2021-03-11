@@ -1,9 +1,9 @@
-# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=development)](https://travis-ci.com/GabrielCiolac/SYSC4806)
+# SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=main)](https://travis-ci.com/GabrielCiolac/SYSC4806)
 Mini-Survey Monkey
 
-## Heroku Link
+## CI/CD Links
+https://travis-ci.com/GabrielCiolac/SYSC4806
 https://group-project-sysc4806.herokuapp.com/
-
 
 ## Description
 Surveyor can create a survey with a list of Questions. Questions can be open-ended (text), asking for a number within a
