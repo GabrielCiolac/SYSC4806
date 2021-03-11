@@ -1,6 +1,10 @@
 # SYSC4806 [![Build Status](https://travis-ci.com/GabrielCiolac/SYSC4806.svg?branch=development)](https://travis-ci.com/GabrielCiolac/SYSC4806)
 Mini-Survey Monkey
 
+## Heroku Link
+https://group-project-sysc4806.herokuapp.com/
+
+
 ## Description
 Surveyor can create a survey with a list of Questions. Questions can be open-ended (text), asking for a number within a
 range, or asking to choose among many options.  Users fill out a survey that is a form generated based on the type of 
@@ -38,16 +42,16 @@ Samantha Tripp - 101089563
 
 ## Todo
 
-- [ ] **Write tests**
-- [ ] Create a form repository
-- [ ] Create a form repository service
-- [ ] Create a form controller  
-- [ ] Create a form object
-- [ ] Decide question architecture (i.e. abstract question class)
-- [ ] Implement question architecture  
-- [ ] Create HTML page serving a list of forms
-- [ ] Create HTML page serving an individual form  
-- [ ] Set up base REST API service for form creation
-- [ ] Set REST API service for form accesses
-- [ ] Persistence of form responses
+- [x] **Write tests**
+- [x] Create a form repository
+- [x] Create a form repository service
+- [x] Create a form controller  
+- [x] Create a form object
+- [x] Decide question architecture (i.e. abstract question class)
+- [x] Implement question architecture  
+- [x] Create HTML page serving a list of forms
+- [x] Create HTML page serving an individual form  
+- [x] Set up base REST API service for form creation
+- [x] Set REST API service for form accesses
+- [x] Persistence of form responses
 - [ ] Create HTML page serving form responses, given form ID
