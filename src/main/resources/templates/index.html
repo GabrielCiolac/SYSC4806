@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/mvc">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Master List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="Form.js"></script>
+</head>
+<body>
+    <h1>Form Master List</h1>
+    <form id="addForm">
+        <p>Title: <input type="text" id="title"/></p>
+        <input type="submit" value="Send" />
+    </form>
+
+    <!-- Begin List of Form Links -->
+    <div th:each="form : ${forms}">
+        <a th:href="@{/form/{id}(id=${form.id})}" th:text="${form.title}"/>
+    </div>
+</body>
+</html>
