@@ -31,6 +31,11 @@ Britney Baker - 101039860
 Mathew Smith - 101029870  
 Samantha Tripp - 101089563
 
+## UML Diagram of Model
+![Alt text](UML-Class-Diagram-of-Model.png?raw=true "Title")
+## ER Diagram
+![Alt text](ER-Diagram.png?raw=true "Title")
+
 ## Todo
 
 - [ ] **Write tests**
