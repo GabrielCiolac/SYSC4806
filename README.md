@@ -2,7 +2,7 @@
 Mini-Survey Monkey
 
 ## CI/CD Links
-https://travis-ci.com/GabrielCiolac/SYSC4806
+https://travis-ci.com/GabrielCiolac/SYSC4806  
 https://group-project-sysc4806.herokuapp.com/
 
 ## Description
@@ -30,8 +30,8 @@ generated, for choice questions a pie chart is generated
 14. Wait for approval
 
 ## Contributors
-Gabriel Ciolac - 101071319  
 Britney Baker - 101039860  
+Gabriel Ciolac - 101071319  
 Mathew Smith - 101029870  
 Samantha Tripp - 101089563
 
@@ -40,18 +40,21 @@ Samantha Tripp - 101089563
 ## ER Diagram
 ![Alt text](ER-Diagram.png?raw=true "Title")
 
-## Todo
+## Milestone 1
+Issue #13 - Create a form repository  
+Issue #14 - Create a form repository service  
+Issue #15 - Create a form controller  
+Issue #16 - Create a form object  
+Issue #17 - Implement question architecture  
+Issue #18 - Create HTML page serving a list of forms  
+Issue #20 - Set up base REST API service for form creation  
+Issue #21 - Set REST API service for form accesses
 
-- [x] **Write tests**
-- [x] Create a form repository
-- [x] Create a form repository service
-- [x] Create a form controller  
-- [x] Create a form object
-- [x] Decide question architecture (i.e. abstract question class)
-- [x] Implement question architecture  
-- [x] Create HTML page serving a list of forms
-- [x] Create HTML page serving an individual form  
-- [x] Set up base REST API service for form creation
-- [x] Set REST API service for form accesses
-- [x] Persistence of form responses
-- [ ] Create HTML page serving form responses, given form ID
+## Milestone 2
+Issue #19 - Create HTML page serving form responses, given form ID  
+Issue #22 - Form response persistence  
+Issue #37 - UI for creating questions, and adding to form  
+Issue #38 - Ability to delete question  
+Issue #40 - Different UIs for different questions  
+Issue #41 - Result Compiling  
+Issue #41 - Integrate Google Cloud Services  
